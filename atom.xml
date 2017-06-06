@@ -80,6 +80,27 @@
   </entry>
   
   <entry>
+    <title>a标签链接跳转传参接收</title>
+    <link href="http://yoursite.com/2017/06/01/a%E6%A0%87%E7%AD%BE%E9%93%BE%E6%8E%A5%E8%B7%B3%E8%BD%AC%E4%BC%A0%E5%8F%82%E6%8E%A5%E6%94%B6/"/>
+    <id>http://yoursite.com/2017/06/01/a标签链接跳转传参接收/</id>
+    <published>2017-06-01T09:36:30.000Z</published>
+    <updated>2017-06-06T09:41:03.233Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">window</span>.location.href=<span class="string">"hello.htm?param="</span>+param;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getUrlParam</span>(<span class="params">key</span>)</span>&#123;</div><div class="line">    <span class="comment">// 获取参数</span></div><div class="line">    <span class="keyword">var</span> url = <span class="built_in">window</span>.location.search;</div><div class="line">    <span class="comment">// 正则筛选地址栏</span></div><div class="line">    <span class="keyword">var</span> reg = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">"(^|&amp;)"</span>+ key +<span class="string">"=([^&amp;]*)(&amp;|$)"</span>);</div><div class="line">    <span class="comment">// 匹配目标参数</span></div><div class="line">    <span class="keyword">var</span> result = url.substr(<span class="number">1</span>).match(reg);</div><div class="line">    <span class="comment">//返回参数值 decodeURIComponent()乱码解析</span></div><div class="line">    <span class="keyword">return</span> result ? <span class="built_in">decodeURIComponent</span>(result[<span class="number">2</span>]) : <span class="literal">null</span>;</div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> param=getUrlParam(<span class="string">'param'</span>);</div><div class="line"><span class="built_in">console</span>.log(param);</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;
+    
+    </summary>
+    
+    
+      <category term="地址栏" scheme="http://yoursite.com/tags/%E5%9C%B0%E5%9D%80%E6%A0%8F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>页面超时302处理</title>
     <link href="http://yoursite.com/2017/06/01/%E9%A1%B5%E9%9D%A2%E8%B6%85%E6%97%B6302%E5%A4%84%E7%90%86/"/>
     <id>http://yoursite.com/2017/06/01/页面超时302处理/</id>
