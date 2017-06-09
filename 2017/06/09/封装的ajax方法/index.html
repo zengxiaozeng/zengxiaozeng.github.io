@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    <title>封装的ajax方法 | zengxiaozeng&#39;s Blog | just coding ~~~</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="ajax,js">
+    <meta name="description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899function aj">
+<meta name="keywords" content="ajax,js">
+<meta property="og:type" content="article">
+<meta property="og:title" content="封装的ajax方法">
+<meta property="og:url" content="http://yoursite.com/2017/06/09/封装的ajax方法/index.html">
+<meta property="og:site_name" content="zengxiaozeng&#39;s Blog">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899function aj">
+<meta property="og:updated_time" content="2017-06-09T09:54:25.113Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="封装的ajax方法">
+<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899function aj">
+    
+        <link rel="alternate" type="application/atom+xml" title="zengxiaozeng&#39;s Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">zengxiaozeng</h5>
+          <a href="mailto:546583603@qq.com" title="546583603@qq.com" class="mail">546583603@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories"  >
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/zengxiaozeng" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="http://blog.sina.com.cn/xunxichenzhilian" target="_blank" >
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">封装的ajax方法</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="输入感兴趣的关键字">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">封装的ajax方法</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2017-06-09T09:38:42.000Z" itemprop="datePublished" class="page-time">
+  2017-06-09
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+<article id="post-封装的ajax方法"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">封装的ajax方法</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2017-06-09 17:38:42" datetime="2017-06-09T09:38:42.000Z"  itemprop="datePublished">2017-06-09</time>
+
+            
+
+
+            
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">ajax</span>(<span class="params">params</span>) </span>&#123;</div><div class="line">	params = params || &#123;&#125;;</div><div class="line">	params.data = params.data || &#123;&#125;;</div><div class="line">	<span class="keyword">var</span> json = params.jsonp ? jsonp(params) : json(params);</div><div class="line">	<span class="comment">// ajax请求</span></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">json</span>(<span class="params">params</span>) </span>&#123;</div><div class="line">		params.type = (params.type || <span class="string">'GET'</span>).toUpperCase();</div><div class="line">		params.data = formatParams(params.data);</div><div class="line">		<span class="keyword">var</span> xhr = <span class="literal">null</span>;</div><div class="line"></div><div class="line">		<span class="comment">// 实例化XMLHttpRequest对象</span></div><div class="line">		<span class="keyword">if</span>(<span class="built_in">window</span>.XMLHttpRequest) &#123;</div><div class="line">			xhr = <span class="keyword">new</span> XMLHttpRequest();</div><div class="line">		&#125; <span class="keyword">else</span> &#123;</div><div class="line">			<span class="comment">// IE6及其以下版本</span></div><div class="line">			xhr = <span class="keyword">new</span> ActiveXObjcet(<span class="string">'Microsoft.XMLHTTP'</span>);</div><div class="line">		&#125;;</div><div class="line"></div><div class="line">		<span class="comment">// 监听事件</span></div><div class="line">		xhr.onreadystatechange = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">			<span class="keyword">if</span>(xhr.readyState == <span class="number">4</span>) &#123;</div><div class="line">				<span class="keyword">var</span> status = xhr.status;</div><div class="line">				<span class="keyword">if</span>(status &gt;= <span class="number">200</span> &amp;&amp; status &lt; <span class="number">300</span>) &#123;</div><div class="line">					<span class="keyword">var</span> response = <span class="string">''</span>;</div><div class="line">					<span class="keyword">var</span> type = xhr.getResponseHeader(<span class="string">'Content-type'</span>);</div><div class="line">					<span class="keyword">if</span>(type.indexOf(<span class="string">'xml'</span>) !== <span class="number">-1</span> &amp;&amp; xhr.responseXML) &#123;</div><div class="line">						response = xhr.responseXML; <span class="comment">//Document对象响应</span></div><div class="line">					&#125; <span class="keyword">else</span> <span class="keyword">if</span>(type === <span class="string">'application/json'</span>) &#123;</div><div class="line">						response = <span class="built_in">JSON</span>.parse(xhr.responseText); <span class="comment">//JSON响应</span></div><div class="line">					&#125; <span class="keyword">else</span> &#123;</div><div class="line">						response = xhr.responseText; <span class="comment">//字符串响应</span></div><div class="line">					&#125;;</div><div class="line">					params.success &amp;&amp; params.success(response);</div><div class="line">				&#125; <span class="keyword">else</span> &#123;</div><div class="line">					params.error &amp;&amp; params.error(status);</div><div class="line">				&#125;</div><div class="line">			&#125;</div><div class="line">		&#125;;</div><div class="line"></div><div class="line">		<span class="comment">// 连接和传输数据</span></div><div class="line">		<span class="keyword">if</span>(params.type == <span class="string">'GET'</span>) &#123;</div><div class="line">			xhr.open(params.type, params.url + <span class="string">'?'</span> + params.data, <span class="literal">true</span>);</div><div class="line">			xhr.send(<span class="literal">null</span>);</div><div class="line">		&#125; <span class="keyword">else</span> &#123;</div><div class="line">			xhr.open(params.type, params.url, <span class="literal">true</span>);</div><div class="line">			<span class="comment">//设置提交时的内容类型</span></div><div class="line">			xhr.setRequestHeader(<span class="string">'Content-Type'</span>, <span class="string">'application/x-www-form-urlencoded; charset=UTF-8'</span>);</div><div class="line">			xhr.send(params.data);</div><div class="line">		&#125;</div><div class="line">	&#125;</div><div class="line"></div><div class="line">	<span class="comment">// jsonp请求</span></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">jsonp</span>(<span class="params">params</span>) </span>&#123;</div><div class="line">		<span class="comment">//创建script标签并加入到页面中</span></div><div class="line">		<span class="keyword">var</span> callbackName = params.jsonp;</div><div class="line">		<span class="keyword">var</span> head = <span class="built_in">document</span>.getElementsByTagName(<span class="string">'head'</span>)[<span class="number">0</span>];</div><div class="line">		<span class="comment">// 设置传递给后台的回调参数名</span></div><div class="line">		params.data[<span class="string">'callback'</span>] = callbackName;</div><div class="line">		<span class="keyword">var</span> data = formatParams(params.data);</div><div class="line">		<span class="keyword">var</span> script = <span class="built_in">document</span>.createElement(<span class="string">'script'</span>);</div><div class="line">		head.appendChild(script);</div><div class="line"></div><div class="line">		<span class="comment">//创建jsonp回调函数</span></div><div class="line">		<span class="built_in">window</span>[callbackName] = <span class="function"><span class="keyword">function</span>(<span class="params">json</span>) </span>&#123;</div><div class="line">			head.removeChild(script);</div><div class="line">			clearTimeout(script.timer);</div><div class="line">			<span class="built_in">window</span>[callbackName] = <span class="literal">null</span>;</div><div class="line">			params.success &amp;&amp; params.success(json);</div><div class="line">		&#125;;</div><div class="line"></div><div class="line">		<span class="comment">//发送请求</span></div><div class="line">		script.src = params.url + <span class="string">'?'</span> + data;</div><div class="line"></div><div class="line">		<span class="comment">//超时处理</span></div><div class="line">		<span class="keyword">if</span>(params.time) &#123;</div><div class="line">			script.timer = setTimeout(<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</div><div class="line">				<span class="built_in">window</span>[callbackName] = <span class="literal">null</span>;</div><div class="line">				head.removeChild(script);</div><div class="line">				params.error &amp;&amp; params.error(&#123;</div><div class="line">					<span class="attr">message</span>: <span class="string">'超时'</span></div><div class="line">				&#125;);</div><div class="line">			&#125;, time);</div><div class="line">		&#125;</div><div class="line">	&#125;;</div><div class="line">	<span class="comment">//格式化参数</span></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">formatParams</span>(<span class="params">data</span>) </span>&#123;</div><div class="line">		<span class="keyword">var</span> arr = [];</div><div class="line">		<span class="keyword">for</span>(<span class="keyword">var</span> name <span class="keyword">in</span> data) &#123;</div><div class="line">			arr.push(<span class="built_in">encodeURIComponent</span>(name) + <span class="string">'='</span> + <span class="built_in">encodeURIComponent</span>(data[name]));</div><div class="line">		&#125;;</div><div class="line">		<span class="comment">// 添加一个随机数，防止缓存</span></div><div class="line">		arr.push(<span class="string">'v='</span> + random());</div><div class="line">		<span class="keyword">return</span> arr.join(<span class="string">'&amp;'</span>);</div><div class="line">	&#125;</div><div class="line">	<span class="comment">// 获取随机数</span></div><div class="line">	<span class="function"><span class="keyword">function</span> <span class="title">random</span>(<span class="params"></span>) </span>&#123;</div><div class="line">		<span class="keyword">return</span> <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * <span class="number">10000</span> + <span class="number">500</span>);</div><div class="line">	&#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>调用：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">ajax(&#123;</div><div class="line">	<span class="attr">url</span>: <span class="string">''</span>,</div><div class="line">	<span class="attr">type</span>: <span class="string">'GET'</span>,</div><div class="line">	<span class="attr">data</span>: &#123;&#125;,</div><div class="line">	<span class="attr">success</span>:<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>&#123;</div><div class="line">		res = <span class="built_in">JSON</span>.parse(res);</div><div class="line">		<span class="built_in">console</span>.log(res);</div><div class="line">	&#125;</div><div class="line">&#125;);</div><div class="line">ajax(&#123;</div><div class="line">	<span class="attr">url</span>: <span class="string">''</span>,</div><div class="line">	<span class="attr">type</span>: <span class="string">'POST'</span>,</div><div class="line">	<span class="attr">data</span>: &#123;&#125;,</div><div class="line">	<span class="attr">success</span>:<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>&#123;</div><div class="line">		res = <span class="built_in">JSON</span>.parse(res);</div><div class="line">		<span class="built_in">console</span>.log(res);</div><div class="line">	&#125;</div><div class="line">&#125;);</div><div class="line">ajax(&#123;</div><div class="line">	<span class="attr">url</span>: <span class="string">''</span>,</div><div class="line">	<span class="attr">jsonp</span>: <span class="string">'jsonpCallback'</span>,</div><div class="line">	<span class="attr">data</span>: &#123;&#125;,</div><div class="line">	<span class="attr">success</span>:<span class="function"><span class="keyword">function</span>(<span class="params">res</span>)</span>&#123;</div><div class="line">		<span class="built_in">console</span>.log(res);</div><div class="line">	&#125;</div><div class="line">&#125;);</div></pre></td></tr></table></figure></p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    <div class="content">
+        
+<span class="post-time">
+    最后更新时间：<time datetime="2017-06-09T09:54:25.113Z" itemprop="dateUpdated">2017-06-09 17:54:25</time>
+</span><br>
+
+
+        
+        这里可以写作者留言，标签和 hexo 中所有变量及辅助函数等均可调用，示例：<a href="/2017/06/09/封装的ajax方法/" target="_blank" rel="external">http://yoursite.com/2017/06/09/封装的ajax方法/</a>
+        
+    </div>
+    <footer>
+        <a href="http://yoursite.com">
+            <img src="/img/avatar.jpg" alt="zengxiaozeng">
+            zengxiaozeng
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/ajax/">ajax</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/js/">js</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/06/09/封装的ajax方法/&title=《封装的ajax方法》 — zengxiaozeng's Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/06/09/封装的ajax方法/&title=《封装的ajax方法》 — zengxiaozeng's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/06/09/封装的ajax方法/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《封装的ajax方法》 — zengxiaozeng's Blog&url=http://yoursite.com/2017/06/09/封装的ajax方法/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/06/09/封装的ajax方法/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2017/06/06/Chrome表单自动填充后背景色为黄色/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Chrome表单自动填充后背景色为黄色</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <ul class="reward-items">
+        
+        <li>
+            <img src="/img/wechat.jpg" title="微信打赏二维码" alt="微信打赏二维码">
+            <p>微信</p>
+        </li>
+        
+
+        
+        <li>
+            <img src="/img/alipay.jpg" title="支付宝打赏二维码" alt="支付宝打赏二维码">
+            <p>支付宝</p>
+        </li>
+        
+    </ul>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <!-- <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>footer.license</span>
+        </p>
+    </div> -->
+    <div class="bottom">
+        <p>
+            <!-- <span>Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a></span> -->
+            <span>zengxiaozeng &copy; 2015 - 2017</span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://yoursite.com/2017/06/09/封装的ajax方法/&title=《封装的ajax方法》 — zengxiaozeng's Blog&pic=http://yoursite.com/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://yoursite.com/2017/06/09/封装的ajax方法/&title=《封装的ajax方法》 — zengxiaozeng's Blog&source=" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2017/06/09/封装的ajax方法/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《封装的ajax方法》 — zengxiaozeng's Blog&url=http://yoursite.com/2017/06/09/封装的ajax方法/&via=http://yoursite.com" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://yoursite.com/2017/06/09/封装的ajax方法/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACNElEQVR42u3aQY6DMAwF0N7/0ow0q0oV6bcDoyF5WVXQFj8WVmL79YrX8bveP79f+fzm593k+vifL1gYGBiPZRzDdcaoBleNIY8NAwNjH0aSZJNf3ZEJx7FhYGBgnCXW6t1eiBgYGBjzCTdPxOONXZKIMTAwMJKtW5Jwe0fW/J8vOItjYGA8kNFrDPzN59v7GxgYGP+ecbRWdWtYTaDleDAwMJZmJMMT0QEyHpuYGdr4EiEGBsbSjOpGLQ8lT8TVDeLpXQwMjEUZzUJ8q4VQbQ/k6RgDA2NtRnXLWB2tqKbj/IkYGBg7MPJRiXwkotcETV7Blx4sBgbG0oxqmT4/+ibbu96xttDfwMDAWI6Rl/6vKsblx9rT6xgYGEszeiX4meGJalmtUGjDwMBYlJFvBHuJ9Y5xii/TbRgYGIsyqs3L3pBEtc1ZGL/AwMDYktErk82MiPWOwV8SLgYGxtKMO4r71S1g4UVgYGBswKiOUCRzDneU56KzOAYGxnKMmdJ/UgjrbRnzRgIGBsZujN7Deol1fgjjgh9gYGA8kJEfOPPCfXXDVz6+YmBgbMO4KohqYp0ZC8PAwNiHcRRX9Q3NlOcKqR8DA2NpRrNl2PqLpLWZbz2bTVAMDIzHMvK2Yp5eewl6KuFiYGBswMjDyh+Ttw3ylH36RAwMDIyJgYzy2MR8CxMDA2NjRj62VW0YjJsQ4+sYGBj7MKqBzrcz89AxMDAwqmX9vEnQG7MYv8QpEgYGxvMYP4f/IuD9d4SgAAAAAElFTkSuQmCC" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+
+
+<script>
+(function() {
+    var OriginTitile = document.title, titleTime;
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            document.title = '哥,你去哪里了！';
+            clearTimeout(titleTime);
+        } else {
+            document.title = '(つェ⊂)欢迎回来!';
+            titleTime = setTimeout(function() {
+                document.title = OriginTitile;
+            },2000);
+        }
+    });
+})();
+</script>
+
+
+
+</body>
+</html>
